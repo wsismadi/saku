@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<!--
+Moon by Rimba
+URL: https://donat.id
+-->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="Description" content="Rimba by Wawan Sismadi">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+
+  <meta http-equiv="Cache-control" content="public" max-age="31536000">
+  <!-- <meta http-equiv="Cache-Control" content="max-age=1209600"> -->
+
+
+  <!-- <link rel="manifest" href="pwa/manifest.json"> -->
+
+  <!-- Add to home screen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Rimba responsive web template">
+  <link rel="apple-touch-icon" href="pwa/icons/icon-152x152.png">
+
+  <!-- Windows related -->
+  <meta name="msapplication-TileImage" content="pwa/icons/icon-144x144.png">
+  <meta name="msapplication-TileColor" content="#386CC1">
+  <meta name="theme-color" content="#164391">
+
+  <meta property="og:title" content="Rimba"/>
+  <meta property="og:image" content="https://donat.id/donat/donat.png"/>
+  <meta property="og:description" content="Rimba responsive web template"/>
+  <meta property="og:url" content="https://donat.id"/>
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="627" />
+  <!-- TYPE BELOW IS PROBABLY: "website" or "article" or look on https://ogp.me/#types -->
+  <meta property="og:type" content="website"/>
+
+  <title>Raccoon | Rimba - Responsive Web Template</title>
+<link rel="icon" type="image/svg+xml" href="../pwa/favicon.svg">
+<link rel="icon" type="image/png" href="../pwa/favicon.png">
+<!-- External CSS -->
+<link rel="stylesheet" href="https://rimba.id/rimba.css">
+
+<link rel="stylesheet" href="style.css">
+
+
+
+<style>
+.sticky { position: -webkit-sticky; position: sticky; top: 0;width: 100%;}
+.header {background-color: #fff;width: 100%;display: inline-block;height: auto;
+
+}
+
+.container{ margin-bottom: 10px;}
+
+body,.main{ padding: 0; width: 90%; margin: 60px auto;}
+body{  background-image: none }
+
+section#hero,section .hero{padding:0;}
+section#hero,.hero {background-image:none;}
+
+@media screen and (max-width: 450px) {
+  body,.main{  padding: 0;   width: 95%; }
+}
+
+
+
+.video {width: 100%;}
+.c-video {
+	width: 100%;
+	/* max-width: 800px; */
+	position: relative;
+	overflow: hidden;
+	height: auto;
+	/* border-radius: 2ch; */
+}
+
+.c-video:hover .controls {
+	transform: translateY(0);
+}
+
+.controls {
+	display: flex;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	flex-wrap: wrap;
+	background: rgba(0, 0, 0, 0.9);
+	transform: translateY(100%) translateY(-5px);
+	transition: all 0.3s;
+}
+
+.buttons {padding: 10px;}
+.buttons button {	background: none;	border: 0;	outline: 0;	cursor: pointer;}
+.buttons button:before {content: '\f144';
+	/* font-family: 'Font Awesome 6 Free'; */
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	font-size: 28px;
+	color: white;
+	-webkit-font-smoothing: antialiased;
+}
+
+.buttons button.play:before {	content: '\f144';}
+.buttons button.pause:before {content: '\f28b';}
+.buttons button.mute:before {	content: '\f144';}
+.buttons button.unmute:before {	content: '\f28b';}
+
+.red-bar {	height: 5px;	top: 0;	left: 0;	width: 100%;	background: #F9F9F9;}
+.red {	height: 5px;	width: 100px;	background-color: red;}
+
+</style>
+
+
+
+<main id="main" class="main">
+
+
+<header class="header sticky">
+<div class="container">
+<a href="index.html" class="logo"><img src="https://rimba.id/img/logo-04.png" alt="Raccoon"></a>
+<input class="menu-btn" type="checkbox" id="menu-btn">
+<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+<ul class="menu">
+  <li><a href="index.html" class="active">Home</a></li>
+  <li><a href="#about">Profile</a></li>
+  <li><a href="#posts">Blog</a></li>
+  <li><a href="#portofolio">Portofolio</a></li>
+<li><a href="#procing">Procing</a></li>
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+</div>
+
+</header>
+
+<section id="video" class="c-video" >
+
+ 	<video class="video" src="https://rimba.id/img/video-01.mp4"></video>
+	<div class="controls">
+		<div class="red-bar">
+			<div class="red"></div>
+		</div>
+		<div class="buttons">
+			<button id="play-pause"></button>
+		</div>
+	</div>
+
+</section>
+<section id="about"></section>
+<section id="stats"></section>
+<section id="services"></section>
+<section id="features"></section>
+<section id="posts"></section>
+<section id="portofolio"></section>
+<section id="pricing"></section>
+<!-- <section id="faq"></section> -->
+<!-- <section id="team"></section> -->
+<!-- <section id="call"></section> -->
+<!-- <section id="testimonial"></section> -->
+<!-- <section id="contact"></section> -->
+<section id="clients"></section>
+<footer id="footer" class="footer"></footer>
+
+</main>
+<script type="text/javascript" src="https://rimba.id/rimba.js"></script>
+<script type="text/javascript" src="https://rimba.id/svg.js"></script>
+
+<script type="text/javascript" src="svg.js"></script>
+<script type="text/javascript" src="script.js"></script>
+
+<script type="text/javascript" >
+// web.controller.hero();
+web.controller.pricing();
+web.controller.posts();
+web.controller.stats();
+web.controller.footer();
+web.controller.about();
+web.controller.services();
+web.controller.portofolio();
+web.controller.features();
+web.controller.clients();
+
+</script>
+
+
+<script type="text/javascript" >
+
+var video = document.querySelector(".video");
+var red = document.querySelector(".red");
+var btn = document.getElementById("play-pause");
+
+function togglePlayPause() {
+	if (video.paused) {
+		btn.className = "pause";
+		video.play();
+	}
+	else {btn.className = "play";video.pause();	}
+}
+
+btn.onclick = function() {	togglePlayPause();};
+
+video.addEventListener("timeupdate", function() {
+	var juicePos = video.currentTime / video.duration;
+	red.style.width = juicePos * 100 + "%";
+	if (video.ended) {
+		btn.className = "play";
+	}
+});
+
+document.onload = function() {	togglePlayPause();};
+
+</script>

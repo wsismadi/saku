@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<!--
+Moon by DonatJS
+URL: https://donat.id
+-->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="Description" content="DonatJS by Wawan Sismadi">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+
+  <meta http-equiv="Cache-control" content="public" max-age="31536000">
+  <!-- <meta http-equiv="Cache-Control" content="max-age=1209600"> -->
+
+
+  <!-- <link rel="manifest" href="pwa/manifest.json"> -->
+
+  <!-- Add to home screen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="DonatJS responsive web template">
+  <link rel="apple-touch-icon" href="pwa/icons/icon-152x152.png">
+
+  <!-- Windows related -->
+  <meta name="msapplication-TileImage" content="pwa/icons/icon-144x144.png">
+  <meta name="msapplication-TileColor" content="#386CC1">
+  <meta name="theme-color" content="#164391">
+
+  <meta property="og:title" content="Giraffe - DonatJS"/>
+  <meta property="og:image" content="https://donat.id/web/img/photo-09.jpg"/>
+  <meta property="og:description" content="DonatJS responsive web template"/>
+  <meta property="og:url" content="https://donat.id"/>
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="627" />
+  <!-- TYPE BELOW IS PROBABLY: "website" or "article" or look on https://ogp.me/#types -->
+  <meta property="og:type" content="website"/>
+
+  <title>Giraffe | DonatJS-responsive web template terbaik</title>
+<link rel="icon" type="image/svg+xml" href="../pwa/favicon.svg">
+<link rel="icon" type="image/png" href="../pwa/favicon.png">
+<!-- External CSS -->
+<link rel="stylesheet" href="style.css">
+
+
+
+<style>
+.sticky { position: -webkit-sticky; position: sticky; top: 0;width: 100%;}
+.header {background-color: #fff;width: 100%;display: inline-block;height: auto;
+
+}
+
+.container{ margin-bottom: 10px;}
+
+body,.main{ padding: 0; width: 90%; margin: 60px auto;}
+body{  background-image: url('img/photo-07.jpg'); }
+body:after {
+background: skyblue;
+background: -webkit-linear-gradient(to right, #22c1c3 0%, #fdbb2d 100%);
+background: linear-gradient(to right, #22c1c3 0%,  #fdbb2d 100% );
+}
+
+section#hero,section .hero{padding:0;}
+section#hero,.hero {background-image:none;}
+
+
+#stats {
+ position: relative;
+ width: 100%;
+ height: 100%;
+ left: 0;
+ top: 0;
+ background-size: cover;
+ background-position: center top;
+ background-attachment: fixed;
+ /* -webkit-transform: translateZ(0); /* necessary for iOS! */
+background-image: url('img/photo-07.jpg');
+}
+
+
+@media screen and (max-width: 450px) {
+  body,.main{  padding: 0;   width: 95%; }
+}
+
+
+canvas {
+  background-color:#fff;
+  /* margin:50px; */
+  width: 100%;
+  height: auto;
+}
+
+</style>
+
+
+</head>
+<body>
+
+
+
+<main id="main" class="main">
+
+
+<header class="header sticky">
+<div class="container">
+<a href="index.html" class="logo"><img src="img/logo-10.png" alt="Girafe"></a>
+<input class="menu-btn" type="checkbox" id="menu-btn">
+<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+<ul class="menu">
+  <li><a href="index.html" class="active">Home</a></li>
+  <li><a href="about-us.html">Profile</a></li>
+  <li><a href="about-us.html">Blog</a></li>
+  <li><a href="about-us.html">Portofolio</a></li>
+<li><a href="menu.html">Procing</a></li>
+<li><a href="order-online.html">Contact</a></li>
+
+</ul>
+</div>
+
+</header>
+
+<section class="" >
+
+  <div class="container text-center">
+    <canvas id="360viewer" width="608" height="456"></canvas>
+  </div>
+
+</section>
+
+<section id="about"></section>
+<section id="stats"></section>
+<section id="services"></section>
+<section id="features"></section>
+<section id="posts"></section>
+<section id="portofolio"></section>
+<section id="pricing"></section>
+<!-- <section id="faq"></section> -->
+<!-- <section id="team"></section> -->
+<!-- <section id="call"></section> -->
+<!-- <section id="testimonial"></section> -->
+<!-- <section id="contact"></section> -->
+<section id="clients"></section>
+<footer id="footer" class="footer"></footer>
+
+</main>
+<script type="text/javascript" src="svg.js"></script>
+<script type="text/javascript" src="script.js"></script>
+<script src="https://code.createjs.com/1.0.0/easeljs.min.js"></script>
+
+
+
+
+
+<script type="text/javascript" >
+// web.controller.hero();
+web.controller.pricing();
+web.controller.posts();
+web.controller.stats();
+web.controller.footer();
+web.controller.about();
+web.controller.services();
+web.controller.portofolio();
+web.controller.features();
+web.controller.clients();
+
+</script>
+
+
+<script type="text/javascript" >
+var stage;
+
+function init() {
+  var canvas = document.getElementById("360viewer");
+  if (!canvas || !canvas.getContext) return;
+
+  stage = new createjs.Stage(canvas);
+  stage.enableMouseOver(true);
+  stage.mouseMoveOutside = true;
+  createjs.Touch.enable(stage);
+
+  var imgList = [
+    "img/360/01.png",
+    "img/360/02.png",
+    "img/360/03.png",
+    "img/360/04.png",
+    "img/360/05.png",
+    "img/360/06.png",
+    "img/360/07.png",
+    "img/360/08.png",
+    "img/360/09.png",
+    "img/360/10.png",
+    "img/360/11.png",
+    "img/360/12.png",
+    "img/360/13.png",
+    "img/360/14.png",
+    "img/360/15.png",
+    "img/360/16.png",
+    "img/360/17.png",
+    "img/360/18.png",
+    "img/360/19.png"
+  ];
+  var images = [],
+    loaded = 0,
+    currentFrame = 0,
+    totalFrames = imgList.length;
+  var rotate360Interval, start_x;
+
+  var bg = new createjs.Shape();
+  stage.addChild(bg);
+
+  var bmp = new createjs.Bitmap();
+  stage.addChild(bmp);
+
+  // var myTxt = new createjs.Text("360 prototype", '13px Roboto', "#E81280");
+  // myTxt.x = myTxt.y =0;
+  // myTxt.alpha = 0.5;
+  // stage.addChild(myTxt);
+
+  function load360Image() {
+    var img = new Image();
+    img.src = imgList[loaded];
+    img.onload = img360Loaded;
+    images[loaded] = img;
+  }
+
+  function img360Loaded(event) {
+    loaded++;
+    bg.graphics.clear()
+    bg.graphics.beginFill("#fff").drawRect(0, 0, stage.canvas.width * loaded / totalFrames, stage.canvas.height);
+    bg.graphics.endFill();
+
+    if (loaded == totalFrames) start360();
+    else load360Image();
+  }
+
+  function start360() {
+    document.body.style.cursor = 'none';
+
+    // 360 icon
+    // var iconImage = new Image();
+    // iconImage.src = "http://jsrun.it/assets/y/n/D/c/ynDcT.png";
+    // iconImage.onload = iconLoaded;
+
+    // update-draw
+    update360(0);
+
+    // first rotation
+    rotate360Interval = setInterval(function() {
+      if (currentFrame === totalFrames - 1) {
+        clearInterval(rotate360Interval);
+        addNavigation();
+      }
+      update360(1);
+    }, 25);
+  }
+
+  function iconLoaded(event) {
+    var iconBmp = new createjs.Bitmap();
+    iconBmp.image = event.target;
+    iconBmp.x = 20;
+    iconBmp.y = canvas.height - iconBmp.image.height - 20;
+    stage.addChild(iconBmp);
+  }
+
+  function update360(dir) {
+    currentFrame += dir;
+    if (currentFrame < 0) currentFrame = totalFrames - 1;
+    else if (currentFrame > totalFrames - 1) currentFrame = 0;
+    bmp.image = images[currentFrame];
+  }
+
+  //-------------------------------
+  function addNavigation() {
+    stage.onMouseOver = mouseOver;
+    stage.onMouseDown = mousePressed;
+    document.body.style.cursor = 'auto';
+  }
+
+  function mouseOver(event) {
+    document.body.style.cursor = 'pointer';
+  }
+
+  function mousePressed(event) {
+    start_x = event.rawX;
+    stage.onMouseMove = mouseMoved;
+    stage.onMouseUp = mouseUp;
+
+    document.body.style.cursor = 'w-resize';
+  }
+
+  function mouseMoved(event) {
+    var dx = event.rawX - start_x;
+    var abs_dx = Math.abs(dx);
+
+    if (abs_dx > 5) {
+      update360(dx / abs_dx);
+      start_x = event.rawX;
+    }
+  }
+
+  function mouseUp(event) {
+    stage.onMouseMove = null;
+    stage.onMouseUp = null;
+    document.body.style.cursor = 'pointer';
+  }
+
+  function handleTick() {
+    stage.update();
+  }
+
+  document.body.style.cursor = 'progress';
+  load360Image();
+
+  // TICKER
+  createjs.Ticker.addEventListener("tick", handleTick);
+  createjs.Ticker.setFPS(60);
+  createjs.Ticker.useRAF = true;
+}
+
+// Init
+window.addEventListener('load', init, false);
+
+</script>

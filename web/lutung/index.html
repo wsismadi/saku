@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<!--
+Moon by Rimba
+URL: https://donat.id
+-->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="Description" content="Rimba by Wawan Sismadi">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+
+  <meta http-equiv="Cache-control" content="public" max-age="31536000">
+  <!-- <meta http-equiv="Cache-Control" content="max-age=1209600"> -->
+
+
+  <!-- <link rel="manifest" href="pwa/manifest.json"> -->
+
+  <!-- Add to home screen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Rimba responsive web template">
+  <link rel="apple-touch-icon" href="pwa/icons/icon-152x152.png">
+
+  <!-- Windows related -->
+  <meta name="msapplication-TileImage" content="pwa/icons/icon-144x144.png">
+  <meta name="msapplication-TileColor" content="#386CC1">
+  <meta name="theme-color" content="#164391">
+
+  <meta property="og:title" content="Rimba"/>
+  <meta property="og:image" content="https://donat.id/donat/donat.png"/>
+  <meta property="og:description" content="Rimba responsive web template"/>
+  <meta property="og:url" content="https://donat.id"/>
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="627" />
+  <!-- TYPE BELOW IS PROBABLY: "website" or "article" or look on https://ogp.me/#types -->
+  <meta property="og:type" content="website"/>
+
+  <title>Lutung | Rimba - Responsive Web Template</title>
+<link rel="icon" type="image/svg+xml" href="../pwa/favicon.svg">
+<link rel="icon" type="image/png" href="../pwa/favicon.png">
+<!-- External CSS -->
+<link rel="stylesheet" href="https://rimba.id/rimba.css">
+
+<link rel="stylesheet" href="style.css">
+
+
+<style>
+.sticky { position: -webkit-sticky; position: sticky; top: 0;width: 100%;}
+.header {background-color: #fff;width: 100%;display: inline-block;height: auto;
+
+}
+
+.container{ margin-bottom: 10px;}
+
+body,.main{ padding: 0; width: 90%; margin: 60px auto;}
+body{  background-image: url('https://rimba.id/img/photo-05.jpg'); }
+
+
+
+section#hero,section .hero{padding:0;}
+section#hero,.hero {background-image:none;}
+
+@media screen and (max-width: 450px) {
+  body,.main{  padding: 0;   width: 95%; }
+}
+
+
+
+#panorama {
+  width: 600px;
+  height: 400px;
+}
+
+.custom-hotspot {
+  height: 50px;
+  width: 50px;
+  background: #f00;
+}
+div.custom-tooltip span {
+  visibility: hidden;
+  position: absolute;
+  border-radius: 3px;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  max-width: 200px;
+  padding: 5px 10px;
+  margin-left: -220px;
+  cursor: default;
+}
+div.custom-tooltip:hover span {  visibility: visible;}
+div.custom-tooltip:hover span:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-width: 10px;
+  border-style: solid;
+  border-color: #fff transparent transparent transparent;
+  bottom: -20px;
+  left: -10px;
+  margin: 0 50%;
+}
+
+
+</style>
+
+<link rel="stylesheet" href="https://cdn.pannellum.org/2.3/pannellum.css"/>
+<script type="text/javascript" src="https://cdn.pannellum.org/2.3/pannellum.js"></script>
+
+</head>
+<body>
+
+
+
+<main id="main" class="main">
+
+
+<header class="header sticky">
+<div class="container">
+<a href="index.html" class="logo"><img src="https://rimba.id/img/logo-07.png" alt="Lutung"></a>
+<input class="menu-btn" type="checkbox" id="menu-btn">
+<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+<ul class="menu">
+  <li><a href="index.html" class="active">Home</a></li>
+  <li><a href="#about">Profile</a></li>
+  <li><a href="#posts">Blog</a></li>
+  <li><a href="#portofolio">Portofolio</a></li>
+<li><a href="#procing">Procing</a></li>
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+</div>
+
+</header>
+
+<section class="" >
+  <div id="panorama"></div>
+
+
+</section>
+
+<section id="about"></section>
+<section id="stats"></section>
+<section id="services"></section>
+<section id="features"></section>
+<section id="posts"></section>
+<section id="portofolio"></section>
+<section id="pricing"></section>
+<!-- <section id="faq"></section> -->
+<!-- <section id="team"></section> -->
+<!-- <section id="call"></section> -->
+<!-- <section id="testimonial"></section> -->
+<!-- <section id="contact"></section> -->
+<section id="clients"></section>
+<footer id="footer" class="footer"></footer>
+
+</main>
+<script type="text/javascript" src="https://rimba.id/rimba.js"></script>
+<script type="text/javascript" src="https://rimba.id/svg.js"></script>
+
+<script type="text/javascript" src="svg.js"></script>
+<script type="text/javascript" src="script.js"></script>
+
+<script type="text/javascript" >
+// web.controller.hero();
+web.controller.pricing();
+web.controller.posts();
+web.controller.stats();
+web.controller.footer();
+web.controller.about();
+web.controller.services();
+web.controller.portofolio();
+web.controller.features();
+web.controller.clients();
+
+</script>
+
+
+<script type="text/javascript" >
+
+// Create viewer
+viewer = pannellum.viewer('panorama', {
+"type": "equirectangular",
+"autoLoad": true,
+"panorama": "https://rimba.id/img/img-01.jpg",
+"hotSpots": [
+  {
+    "pitch": 14.1,
+    "yaw": 1.5,
+    "cssClass": "custom-hotspot",
+    "createTooltipFunc": hotspot,
+    "createTooltipArgs": "Photo 1"
+  },
+  {
+    "pitch": -9.4,
+    "yaw": 272.6,
+    "cssClass": "custom-hotspot",
+    "createTooltipFunc": hotspot,
+    "createTooltipArgs": "Photo 2"
+  },
+  {
+    "pitch": -0.9,
+    "yaw": 94.4,
+    "cssClass": "custom-hotspot",
+    "createTooltipFunc": hotspot,
+    "createTooltipArgs": "Photo 3"
+  }
+]
+});
+
+// Hot spot creation function
+function hotspot(hotSpotDiv, args) {
+console.log(hotSpotDiv);
+console.log(args);
+hotSpotDiv.classList.add('custom-tooltip');
+var span = document.createElement('span');
+span.innerHTML = args;
+hotSpotDiv.appendChild(span);
+span.style.width = span.scrollWidth - 20 + 'px';
+span.style.marginLeft = -(span.scrollWidth - hotSpotDiv.offsetWidth) / 2 + 'px';
+span.style.marginTop = -span.scrollHeight - 12 + 'px';
+}
+
+</script>

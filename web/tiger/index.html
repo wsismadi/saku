@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<!--
+Moon by Rimba
+URL: https://donat.id
+-->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="Description" content="Rimba by Wawan Sismadi">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+
+  <meta http-equiv="Cache-control" content="public" max-age="31536000">
+  <!-- <meta http-equiv="Cache-Control" content="max-age=1209600"> -->
+
+
+  <!-- <link rel="manifest" href="pwa/manifest.json"> -->
+
+  <!-- Add to home screen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Rimba responsive web template">
+  <link rel="apple-touch-icon" href="pwa/icons/icon-152x152.png">
+
+  <!-- Windows related -->
+  <meta name="msapplication-TileImage" content="pwa/icons/icon-144x144.png">
+  <meta name="msapplication-TileColor" content="#386CC1">
+  <meta name="theme-color" content="#164391">
+
+  <meta property="og:title" content="Rimba"/>
+  <meta property="og:image" content="https://donat.id/donat/donat.png"/>
+  <meta property="og:description" content="Rimba responsive web template"/>
+  <meta property="og:url" content="https://donat.id"/>
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="627" />
+  <!-- TYPE BELOW IS PROBABLY: "website" or "article" or look on https://ogp.me/#types -->
+  <meta property="og:type" content="website"/>
+
+  <title>Tiger | Rimba - Responsive Web Template</title>
+<link rel="icon" type="image/svg+xml" href="../pwa/favicon.svg">
+<link rel="icon" type="image/png" href="../pwa/favicon.png">
+<!-- External CSS -->
+<link rel="stylesheet" href="https://rimba.id/rimba.css">
+
+<link rel="stylesheet" href="style.css">
+
+
+
+<style>
+
+.sticky { position: -webkit-sticky; position: sticky; top: 0;width: 100%;}
+.header {background-color: #fff;width: 100%;display: inline-block;height: auto;
+
+}
+
+.container{ margin-bottom: 10px;}
+
+body,.main{ padding: 0; width: 90%; margin: 60px auto;}
+body{  background-image: url('https://rimba.id/img/photo-06.jpg'); }
+body:after {
+background: skyblue;
+background: -webkit-linear-gradient(to right, #22c1c3 0%, #fdbb2d 100%);
+background: linear-gradient(to right, #22c1c3 0%,  #fdbb2d 100% );
+}
+
+section#hero,section .hero{padding:0;}
+section#hero,.hero {background-image:none;}
+
+@media screen and (max-width: 450px) {
+  body,.main{  padding: 0;   width: 95%; }
+}
+
+
+
+.layer {
+  width: 100%;  height:500px;
+  position: relative;
+  overflow: hidden;
+  perspective: 600px;
+  background: #caeaf0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+[class*="layer-"] {
+  position: absolute;
+  left: -10%;
+  width: 120%;
+  height: 100%;
+  transition: all 0.8s ease-out;
+  background-size: 100%;
+}
+
+.layer-1 {
+  top: 50%;
+  background: url("https://rimba.id/img/bg-04.png") center center no-repeat;
+  z-index: -2;
+}
+
+.layer-2 {
+  top: 0%;
+  background: url("https://rimba.id/img/bg-03.png")center center no-repeat;
+  z-index: -3;
+}
+
+.layer-3 {
+  top: 8%;
+  background:  url("https://rimba.id/img/bg-02.png") center center no-repeat;
+  z-index: -6;
+}
+
+.layer-4 {
+  top: -5%;
+  background: url("https://rimba.id/img/bg-01.png") 0 top no-repeat;
+  z-index: -9;
+  /* opacity: 0.09; */
+  /* filter: blur(10px); */
+}
+
+
+
+</style>
+
+
+</head>
+<body>
+
+
+
+<main id="main" class="main">
+
+
+<header class="header sticky">
+<div class="container">
+<a href="index.html" class="logo"><img src="https://rimba.id/img/logo-09.png" alt="Tiger"></a>
+<input class="menu-btn" type="checkbox" id="menu-btn">
+<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+<ul class="menu">
+  <li><a href="index.html" class="active">Home</a></li>
+  <li><a href="#about">Profile</a></li>
+  <li><a href="#posts">Blog</a></li>
+  <li><a href="#portofolio">Portofolio</a></li>
+<li><a href="#procing">Procing</a></li>
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+</div>
+
+</header>
+
+<section class="layer" >
+
+  <div class="layer-1" data-speed="16">
+    <img src="https://rimba.id/img/figure-09.png" style="float:left;bottom:0; " >
+    <!-- <img src="img/figure-09.png" style="float:right;bottom:0;" > -->
+ </div>
+ <div class="layer-2" data-speed="32"></div>
+ <div class="layer-3" data-speed="64"></div>
+ <div class="layer-4" data-speed="80"></div>
+
+</section>
+
+<section id="about"></section>
+<section id="stats"></section>
+<section id="services"></section>
+<section id="features"></section>
+<section id="posts"></section>
+<section id="portofolio"></section>
+<section id="pricing"></section>
+<!-- <section id="faq"></section> -->
+<!-- <section id="team"></section> -->
+<!-- <section id="call"></section> -->
+<!-- <section id="testimonial"></section> -->
+<!-- <section id="contact"></section> -->
+<section id="clients"></section>
+<footer id="footer" class="footer"></footer>
+
+</main>
+<script type="text/javascript" src="https://rimba.id/rimba.js"></script>
+<script type="text/javascript" src="https://rimba.id/svg.js"></script>
+
+<script type="text/javascript" src="svg.js"></script>
+<script type="text/javascript" src="script.js"></script>
+
+
+
+
+<script type="text/javascript" >
+// web.controller.hero();
+web.controller.pricing();
+web.controller.posts();
+web.controller.stats();
+web.controller.footer();
+web.controller.about();
+web.controller.services();
+web.controller.portofolio();
+web.controller.features();
+web.controller.clients();
+
+</script>
+
+
+<script type="text/javascript" >
+const layers = document.querySelectorAll('[class*="layer-"]')
+const hero = document.querySelector('section')
+
+hero.addEventListener("mousemove",(e)=>{
+ layers.forEach( layer => {
+    let speed = layer.dataset.speed
+    let x = e.pageX/-speed
+    let y = e.pageY/-speed/.8
+    let z = x*2*-1
+    layer.style.transform = `translateX(${x}px) translateY(${y}px) translateZ(${z}px)`
+ })
+})
+
+
+</script>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!--
+Moon by Rimba
+URL: https://donat.id
+-->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="Description" content="Rimba by Wawan Sismadi">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+
+  <meta http-equiv="Cache-control" content="public" max-age="31536000">
+  <!-- <meta http-equiv="Cache-Control" content="max-age=1209600"> -->
+
+
+  <!-- <link rel="manifest" href="pwa/manifest.json"> -->
+
+  <!-- Add to home screen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Rimba responsive web template">
+  <link rel="apple-touch-icon" href="pwa/icons/icon-152x152.png">
+
+  <!-- Windows related -->
+  <meta name="msapplication-TileImage" content="pwa/icons/icon-144x144.png">
+  <meta name="msapplication-TileColor" content="#386CC1">
+  <meta name="theme-color" content="#164391">
+
+  <meta property="og:title" content="Rimba"/>
+  <meta property="og:image" content="https://donat.id/donat/donat.png"/>
+  <meta property="og:description" content="Rimba responsive web template"/>
+  <meta property="og:url" content="https://donat.id"/>
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="627" />
+  <!-- TYPE BELOW IS PROBABLY: "website" or "article" or look on https://ogp.me/#types -->
+  <meta property="og:type" content="website"/>
+
+  <title>Lion | Rimba - Responsive Web Template</title>
+<link rel="icon" type="image/svg+xml" href="../pwa/favicon.svg">
+<link rel="icon" type="image/png" href="../pwa/favicon.png">
+<!-- External CSS -->
+<link rel="stylesheet" href="https://rimba.id/rimba.css">
+
+<link rel="stylesheet" href="style.css">
+
+
+<style>
+
+
+
+ .sticky {
+ 	/* position: -webkit-sticky; */
+ 	position: sticky;
+ 	top: 0;
+width: 100%;
+ }
+
+ .header {
+   background-color: #fff;
+   width: 100%;
+   display: inline-block;
+
+ }
+
+
+
+ body,.main{ margin: 0; padding: 0; width: 100%;}
+ /* body{  background-image: url('img/photo-03.jpg'); } */
+ body{  background-image: none; }
+
+ section{ margin: 0; padding:80px 0;}
+
+
+ body,.footer,.main{ margin: 0; padding: 0; width: 100%;}
+ .footer{ padding: 15px;}
+ /* section{ margin: 0; padding:80px 0;} */
+
+</style>
+
+<main id="main" class="main">
+
+
+<header class="header sticky">
+ <a href="index.html" class="logo"><img src="https://rimba.id/img/logo-01.png" alt="Lion"></a>
+<input class="menu-btn" type="checkbox" id="menu-btn">
+<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+<ul class="menu">
+  <li><a href="index.html" class="active">Home</a></li>
+  <li><a href="#about">Profile</a></li>
+  <li><a href="#posts">Blog</a></li>
+  <li><a href="#portofolio">Portofolio</a></li>
+<li><a href="#procing">Procing</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</header>
+<section id="hero" class="parallax"></section>
+<section id="about"></section>
+<section id="stats"></section>
+<section id="services"></section>
+<section id="features"></section>
+<section id="posts"></section>
+<section id="portofolio"></section>
+<section id="pricing"></section>
+<!-- <section id="faq"></section> -->
+<!-- <section id="team"></section> -->
+<!-- <section id="call"></section> -->
+<!-- <section id="testimonial"></section> -->
+<!-- <section id="contact"></section> -->
+<section id="clients"></section>
+<footer id="footer" class="footer"></footer>
+
+</main>
+<script type="text/javascript" src="https://rimba.id/rimba.js"></script>
+<script type="text/javascript" src="https://rimba.id/svg.js"></script>
+
+<script type="text/javascript" src="svg.js"></script>
+<script type="text/javascript" src="script.js"></script>
+
+<script type="text/javascript" >
+// web.controller.hero();
+web.controller.pricing();
+web.controller.posts();
+web.controller.stats();
+web.controller.footer();
+web.controller.about();
+web.controller.services();
+web.controller.portofolio();
+web.controller.features();
+web.controller.clients();
+
+</script>
