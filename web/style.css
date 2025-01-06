@@ -575,3 +575,17 @@ section:nth-child(even) { background-color: #f2f2f2;}
    background-repeat: no-repeat;
    background-size: cover;
  }
+
+.youtube-embed {
+  position: relative;
+  padding-bottom: 56%;
+  width: 100%;
+  text-align: left;
+}
+
+.youtube-embed iframe {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  overflow: hidden;
+}
