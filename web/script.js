@@ -50,7 +50,7 @@ data:[
   {id:1,nama:'Bear',gambar:'img/photo-01.jpg',isi:'<div class="col-1-2"><a href="bear/" class="btn">Demo</a></div><div class="col-1-2"><a href="#" class="btn">Download</a></div>'},
   {id:2,nama:'Giraffe',gambar:'img/photo-02.jpg',isi:'<div class="col-1-2"><a href="giraffe/" class="btn">Demo</a></div><div class="col-1-2"><a href="#" class="btn">Download</a></div>'},
   {id:3,nama:'Kera',gambar:'img/photo-03.jpg',isi:'<div class="col-1-2"><a href="kera/" class="btn">Demo</a></div><div class="col-1-2"><a href="#" class="btn">Download</a></div>'},
-  {id:4,nama:'Koala',gambar:'img/photo-04.jpg',isi:'<div class="col-1-2"><a href="koala/" class="btn">Demo</a></div><div class="col-1-2"><a href="#" class="btn">Download</a></div>'},
+  {id:4,nama:'Koala',gambar:'img/photo-04.jpg',isi:'<iframe width="560" height="315" src="//www.youtube.com/embed/58-atNakMWw" frameborder="0" allowfullscreen></iframe><div class="col-1-2"><a href="koala/" class="btn">Demo</a></div><div class="col-1-2"><a href="#" class="btn">Download</a></div>'},
   // {id:5,nama:'Lion',gambar:'img/photo-05.jpg',isi:'<div class="col-1-2"><a href="lion/" class="btn">Demo</a></div><div class="col-1-2"><a href="#" class="btn">Download</a></div>'},
   // {id:6,nama:'Lutung',gambar:'img/photo-06.jpg',isi:'<div class="col-1-2"><a href="lutung/" class="btn">Demo</a></div><div class="col-1-2"><a href="#" class="btn">Download</a></div>'},
   // {id:7,nama:'panda',gambar:'img/photo-07.jpg',isi:'<div class="col-1-2"><a href="panda/" class="btn">Demo</a></div><div class="col-1-2"><a href="#" class="btn">Download</a></div>'},
